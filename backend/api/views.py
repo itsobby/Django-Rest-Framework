@@ -16,4 +16,3 @@ def api_home(request, *args, **kwargs):
         print(serializer.data)
         return Response(serializer.data)
     return Response({"invalid": "not good data"}, status=400)
-      
