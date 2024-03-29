@@ -6,7 +6,9 @@
 	],
 	"settings": {
 		"cSpell.words": [
-			"cfehome"
+			"authtoken",
+			"cfehome",
+			"vzsit"
 		]
 	}
 }
