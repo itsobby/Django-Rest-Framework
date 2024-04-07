@@ -6,10 +6,12 @@
 	],
 	"settings": {
 		"cSpell.words": [
+			"algoliasearch",
 			"authtoken",
 			"cfehome",
 			"viewsets",
-			"vzsit"
+			"vzsit",
+			"YRIEX"
 		]
 	}
 }
