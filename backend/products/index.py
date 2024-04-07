@@ -13,6 +13,10 @@ class ProductIndex(AlgoliaIndex):
         'user',
         'public'
     ]
+    settings = {
+        'searchableAttributes': ['title', 'body'],
+        'attributesForFaceting': ['user', 'public']
+    }
     tags = 'get_tags_list'
     
 # admin.site.register(Product, ProductModelAdmin)
