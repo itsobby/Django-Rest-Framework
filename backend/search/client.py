@@ -10,6 +10,7 @@ def get_index(index_name='cfe_Product'):
     index = client.init_index(index_name)
     return index
 
+
 def perform_search(query, **kwargs):
     """
     perform_search("hello", tags=["electronics"], public=True)
@@ -23,7 +24,7 @@ def perform_search(query, **kwargs):
             params['tagFilters'] = tags
     index_filters = [f"{k}:{v}" for k,v in kwargs.items() if v]
     if len(index_filters) != 0:
-        params['facetFilters'] = index_filters
+            params['facetFilters'] = index_filters
     print(params)
     results = index.search(query, params)
     return results
